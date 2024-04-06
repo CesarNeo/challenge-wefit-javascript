@@ -33,8 +33,9 @@ const cardNature = cards.eq(3)
 
 cards.remove()
 cardsContainer.append(cardNature, cardAnimals, cardPeople,cardTechnology)
+const newCards = cardsContainer.find('div.col-lg-3')
 
-const secondCard = cards.eq(1)
+const secondCard = newCards.eq(1)
 const secondCardButton = secondCard.find('a.btn')
 secondCardButton.removeClass('btn-primary').addClass('btn-success')
 
